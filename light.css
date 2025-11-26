@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-    background-image: url('./assets/background-light-mode.svg');
+    background-image: url("./assets/background-light-mode.svg");
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -271,3 +271,4 @@ body {
     }
 
 }
+
