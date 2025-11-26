@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App | Design System</title>
+    <!-- <link rel="stylesheet" href="dark.css"> -->
+    <link rel="stylesheet" href="light.css" id="theme-link">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>T O D O</h1>
+            <div id="theme-toggle">
+                <img id="theme-icon" src="/assets/moon.svg" alt="Toggle Theme" style="cursor: pointer;">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="todo-input">
+            <span class="checkbox-circle"></span>
+            <input type="text" id="new-todo-input" placeholder="Create a new todo...">
+        </div>
+
+        <div class="todo-list-container">
+            <ul id="todo-list" class="todo-list">
+            </ul>
+
+            <div class="todo-footer">
+                <span id="items-left">0 items left</span>
+
+                <div class="filters-desktop">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <button id="clear-completed-btn">Clear Completed</button>
+            </div>
+        </div>
+
+        <div class="mobile-filters" id="mobile-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <p class="drag-info">Drag and drop to reorder list</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
